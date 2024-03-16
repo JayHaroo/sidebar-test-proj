@@ -4,12 +4,10 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div className="bg-zinc-900 w-[12rem] h-screen flex-col px-[1rem] pt-[1rem]">
-        <div className="flex items-center">
+      <div className="bg-zinc-900 w-[12rem] h-screen flex-col flex items-center">
+        <div className="flex items-center pt-5">
           <svg
             width="40px"
             height="40px"
@@ -40,7 +38,14 @@ function App() {
           </svg>
           <div className="text-white px-2">RATATUWI</div>
         </div>
-          
+        <div className="items pt-5">
+          <div className="bread text-white hover:bg-slate-800 hover:cursor-pointer">
+            Breads
+          </div>
+          <div className="soup text-white hover:bg-slate-800 hover:cursor-pointer">
+            Soups
+          </div>
+        </div>
       </div>
     </>
   );
