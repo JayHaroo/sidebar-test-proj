@@ -1,13 +1,11 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import React from "react";
 import "./App.css";
 
 function App() {
   return (
     <>
       <div className="body flex">
-        <div className="bg-zinc-900 w-[12rem] h-screen flex-col flex items-center">
+        <div className="bg-[#6c4728] w-[13rem] h-screen flex-col flex items-center">
           <div className="flex items-center pt-5">
             <svg
               width="40px"
@@ -40,17 +38,13 @@ function App() {
             <div className="text-white px-2">RATATUWI</div>
           </div>
           <div className="items w-full mt-5">
-            <div className="bread flex items-center justify-center text-white h-[50px] w-full hover:bg-slate-800 hover:cursor-pointer">
+            <button className="bread flex items-center justify-center text-white h-[50px] w-full hover:bg-[#db9d68] hover:cursor-pointer">
               Breads
-            </div>
-            <div className="soup flex items-center justify-center text-white h-[50px] w-full text-white hover:bg-slate-800 hover:cursor-pointer">
+            </button>
+            <button className="soup flex items-center justify-center text-white h-[50px] w-full hover:bg-[#db9d68] hover:cursor-pointer">
               Soups
-            </div>
+            </button>
           </div>
-        </div>
-
-        <div className="hamburger hover:cursor-pointer text-black ml-2 mt-1 text-[1.5rem] ">
-          ☰
         </div>
       </div>
     </>
