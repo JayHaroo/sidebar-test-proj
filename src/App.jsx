@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
+import Breads from "./components/breads";
+import Soups from "./components/soups";
 
 function App() {
+  const [activeButton, setActiveButton] = useState("Breads");
+
+  const handleActiveButton = (buttonName) => {
+    setActiveButton(buttonName);
+  };
+
+  const render = () => {
+    switch (activeButton) {
+      case "Breads":
+        return <Breads />;
+      case "Soups":
+        return <Soups />;
+    }
+  };
+
   return (
     <>
       <div className="body flex">
@@ -38,14 +55,21 @@ function App() {
             <div className="text-white px-2">RATATUWI</div>
           </div>
           <div className="items w-full mt-5">
-            <button className="bread flex items-center justify-center text-white h-[50px] w-full hover:bg-[#db9d68] hover:cursor-pointer">
+            <button
+              onClick={() => handleActiveButton("Breads")}
+              className="bread flex items-center justify-center text-white h-[50px] w-full hover:bg-[#db9d68] hover:cursor-pointer"
+            >
               Breads
             </button>
-            <button className="soup flex items-center justify-center text-white h-[50px] w-full hover:bg-[#db9d68] hover:cursor-pointer">
+            <button
+              onClick={() => handleActiveButton("Soups")}
+              className="soup flex items-center justify-center text-white h-[50px] w-full hover:bg-[#db9d68] hover:cursor-pointer"
+            >
               Soups
             </button>
           </div>
         </div>
+        <div className="bg-[#f0c474] w-full">{render()}</div>
       </div>
     </>
   );
