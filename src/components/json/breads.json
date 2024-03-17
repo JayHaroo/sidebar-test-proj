@@ -1,0 +1,35 @@
+{
+    "bread_types": [
+      {
+        "name": "Baguette"
+      },
+      {
+        "name": "Sourdough"
+      },
+      {
+        "name": "Ciabatta"
+      },
+      {
+        "name": "Whole Wheat"
+      },
+      {
+        "name": "Rye Bread"
+      },
+      {
+        "name": "Pumpernickel"
+      },
+      {
+        "name": "Brioche"
+      },
+      {
+        "name": "Focaccia"
+      },
+      {
+        "name": "Challah"
+      },
+      {
+        "name": "Multigrain Bread"
+      }
+    ]
+  }
+  
