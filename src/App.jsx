@@ -38,11 +38,11 @@ function App() {
           </svg>
           <div className="text-white px-2">RATATUWI</div>
         </div>
-        <div className="items pt-5">
-          <div className="bread text-white hover:bg-slate-800 hover:cursor-pointer">
+        <div className="items w-full mt-5">
+          <div className="bread flex items-center justify-center text-white h-[50px] w-full hover:bg-slate-800 hover:cursor-pointer">
             Breads
           </div>
-          <div className="soup text-white hover:bg-slate-800 hover:cursor-pointer">
+          <div className="soup flex items-center justify-center text-white h-[50px] w-full text-white hover:bg-slate-800 hover:cursor-pointer">
             Soups
           </div>
         </div>
